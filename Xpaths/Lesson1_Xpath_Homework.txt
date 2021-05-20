@@ -1,0 +1,70 @@
+Homework
+
+HomeScreen Elements
+
+//img[@id='homeIcon']
+//a[@id='nav-link-home']
+//a[@id='nav-link-login']
+(//div[@class='post-feed-container'])[1]
+(//div[@class='d-flex'])[2]
+(//div[@class='post-date'])[2]
+(//div[@class='post-feed-img'])[2]
+
+Homescreen after log in 
+(//div[@class='post-feed-container']//button[@class='btn btn-primary ng-star-inserted'])[1]
+
+When clicked on the Post
+
+//i[@class='like far fa-heart fa-2x']
+//i[@class='ml-4 far fa-thumbs-down fa-2x']
+//body[1]/ngb-modal-window[1]/.//div[@class='post-modal-img']
+//body[1]/ngb-modal-window[1]/.//input[@class='form-control ng-pristine ng-invalid ng-touched']
+//body[1]/ngb-modal-window[1]/.//a[@class='post-user']
+//body[1]/ngb-modal-window[1]/.//div[@class='comment-list-container']
+
+Log In screen
+//form[@class='text-center border border-light form-container ng-untouched ng-pristine ng-invalid']
+//p[contains(text(),'Sign in')]
+//input[@id='defaultLoginFormUsername']
+//input[@id='defaultLoginFormPassword']
+//input[@type='checkbox']
+//span[contains(text(),'Remember me')]
+//span[contains(text(),'Not a member?')]
+//a[contains(text(),'Register')]
+//button[@id='sign-in-button']
+
+Sign In
+Email - has a wierd condition with >68 characters if we havea @ at some point
+Was able to sign in with invalid confirm password !
+
+//h4[contains(text(),'Sign up')]
+//input[@formcontrolname="username"]
+//input[@formcontrolname="email"]
+//input[@id='defaultRegisterFormPassword']
+//input[@id='defaultRegisterPhonePassword']
+//button[@id='sign-in-button']
+(//div[@class='input-filed has-danger']/span[contains(text(), 'This field is required!')])[1]
+(//div[@class='input-filed has-danger']/span[contains(text(), 'Minimum 2 characters !')])[1] 
+(//div[@class='input-filed has-danger']/span[contains(text(), 'Minimum 6 characters !')])[1] 
+(//div[@class='input-filed has-danger']/span[contains(text(), 'Email invalid!')])[1] 
+(//div[@class='input-filed has-danger']/span[contains(text(), 'Maximum 20 characters!')])[1] 
+
+Profile
+//a[@id='nav-link-profile']
+//a[@id='nav-link-new-post']
+//h2[contains(text(),'Real name')]
+//i[@class='fas fa-user-edit ng-star-inserted']
+//strong[@class='profile-stat-count']
+//li[@id='followers']
+ //li[@id='following']
+ (//div[@class='btn-group btn-group-toggle post-filter-buttons']/.//input[@type='radio'])[1]
+ //i[@class='far fa-plus-square fa-3x']
+ //h3[contains(text(),'New post')]
+ 
+ New Post
+ //h3[contains(text(),'Post a picture to share with your awesome follower')]
+ //div[@class='uploadfilecontainer']
+ //button[@id='choose-file']
+ //input[@class='form-control input-lg']
+ //input[@formcontrolname='caption']
+ //button[@id='create-post']
